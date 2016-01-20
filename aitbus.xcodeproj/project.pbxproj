@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		446A41F91C4FD2AE0036AFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A41F81C4FD2AE0036AFAC /* AppDelegate.swift */; };
+		446A41FB1C4FD2AE0036AFAC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A41FA1C4FD2AE0036AFAC /* FirstViewController.swift */; };
+		446A41FD1C4FD2AE0036AFAC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A41FC1C4FD2AE0036AFAC /* SecondViewController.swift */; };
+		446A42001C4FD2AE0036AFAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446A41FE1C4FD2AE0036AFAC /* Main.storyboard */; };
+		446A42021C4FD2AE0036AFAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446A42011C4FD2AE0036AFAC /* Assets.xcassets */; };
+		446A42051C4FD2AE0036AFAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446A42031C4FD2AE0036AFAC /* LaunchScreen.storyboard */; };
+		446A42101C4FD2AF0036AFAC /* aitbusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A420F1C4FD2AF0036AFAC /* aitbusTests.swift */; };
+		446A421B1C4FD2AF0036AFAC /* aitbusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A421A1C4FD2AF0036AFAC /* aitbusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		446A420C1C4FD2AF0036AFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 446A41ED1C4FD2AE0036AFAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 446A41F41C4FD2AE0036AFAC;
+			remoteInfo = aitbus;
+		};
+		446A42171C4FD2AF0036AFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 446A41ED1C4FD2AE0036AFAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 446A41F41C4FD2AE0036AFAC;
+			remoteInfo = aitbus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		446A41F51C4FD2AE0036AFAC /* aitbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aitbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		446A41F81C4FD2AE0036AFAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		446A41FA1C4FD2AE0036AFAC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		446A41FC1C4FD2AE0036AFAC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		446A41FF1C4FD2AE0036AFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		446A42011C4FD2AE0036AFAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		446A42041C4FD2AE0036AFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		446A42061C4FD2AF0036AFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446A420B1C4FD2AF0036AFAC /* aitbusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aitbusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		446A420F1C4FD2AF0036AFAC /* aitbusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aitbusTests.swift; sourceTree = "<group>"; };
+		446A42111C4FD2AF0036AFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446A42161C4FD2AF0036AFAC /* aitbusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aitbusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		446A421A1C4FD2AF0036AFAC /* aitbusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aitbusUITests.swift; sourceTree = "<group>"; };
+		446A421C1C4FD2AF0036AFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		446A41F21C4FD2AE0036AFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446A42081C4FD2AF0036AFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446A42131C4FD2AF0036AFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		446A41EC1C4FD2AE0036AFAC = {
+			isa = PBXGroup;
+			children = (
+				446A41F71C4FD2AE0036AFAC /* aitbus */,
+				446A420E1C4FD2AF0036AFAC /* aitbusTests */,
+				446A42191C4FD2AF0036AFAC /* aitbusUITests */,
+				446A41F61C4FD2AE0036AFAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		446A41F61C4FD2AE0036AFAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				446A41F51C4FD2AE0036AFAC /* aitbus.app */,
+				446A420B1C4FD2AF0036AFAC /* aitbusTests.xctest */,
+				446A42161C4FD2AF0036AFAC /* aitbusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		446A41F71C4FD2AE0036AFAC /* aitbus */ = {
+			isa = PBXGroup;
+			children = (
+				446A41F81C4FD2AE0036AFAC /* AppDelegate.swift */,
+				446A41FA1C4FD2AE0036AFAC /* FirstViewController.swift */,
+				446A41FC1C4FD2AE0036AFAC /* SecondViewController.swift */,
+				446A41FE1C4FD2AE0036AFAC /* Main.storyboard */,
+				446A42011C4FD2AE0036AFAC /* Assets.xcassets */,
+				446A42031C4FD2AE0036AFAC /* LaunchScreen.storyboard */,
+				446A42061C4FD2AF0036AFAC /* Info.plist */,
+			);
+			path = aitbus;
+			sourceTree = "<group>";
+		};
+		446A420E1C4FD2AF0036AFAC /* aitbusTests */ = {
+			isa = PBXGroup;
+			children = (
+				446A420F1C4FD2AF0036AFAC /* aitbusTests.swift */,
+				446A42111C4FD2AF0036AFAC /* Info.plist */,
+			);
+			path = aitbusTests;
+			sourceTree = "<group>";
+		};
+		446A42191C4FD2AF0036AFAC /* aitbusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				446A421A1C4FD2AF0036AFAC /* aitbusUITests.swift */,
+				446A421C1C4FD2AF0036AFAC /* Info.plist */,
+			);
+			path = aitbusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		446A41F41C4FD2AE0036AFAC /* aitbus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446A421F1C4FD2AF0036AFAC /* Build configuration list for PBXNativeTarget "aitbus" */;
+			buildPhases = (
+				446A41F11C4FD2AE0036AFAC /* Sources */,
+				446A41F21C4FD2AE0036AFAC /* Frameworks */,
+				446A41F31C4FD2AE0036AFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aitbus;
+			productName = aitbus;
+			productReference = 446A41F51C4FD2AE0036AFAC /* aitbus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		446A420A1C4FD2AF0036AFAC /* aitbusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446A42221C4FD2AF0036AFAC /* Build configuration list for PBXNativeTarget "aitbusTests" */;
+			buildPhases = (
+				446A42071C4FD2AF0036AFAC /* Sources */,
+				446A42081C4FD2AF0036AFAC /* Frameworks */,
+				446A42091C4FD2AF0036AFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				446A420D1C4FD2AF0036AFAC /* PBXTargetDependency */,
+			);
+			name = aitbusTests;
+			productName = aitbusTests;
+			productReference = 446A420B1C4FD2AF0036AFAC /* aitbusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		446A42151C4FD2AF0036AFAC /* aitbusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446A42251C4FD2AF0036AFAC /* Build configuration list for PBXNativeTarget "aitbusUITests" */;
+			buildPhases = (
+				446A42121C4FD2AF0036AFAC /* Sources */,
+				446A42131C4FD2AF0036AFAC /* Frameworks */,
+				446A42141C4FD2AF0036AFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				446A42181C4FD2AF0036AFAC /* PBXTargetDependency */,
+			);
+			name = aitbusUITests;
+			productName = aitbusUITests;
+			productReference = 446A42161C4FD2AF0036AFAC /* aitbusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		446A41ED1C4FD2AE0036AFAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ppengotsu;
+				TargetAttributes = {
+					446A41F41C4FD2AE0036AFAC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					446A420A1C4FD2AF0036AFAC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 446A41F41C4FD2AE0036AFAC;
+					};
+					446A42151C4FD2AF0036AFAC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 446A41F41C4FD2AE0036AFAC;
+					};
+				};
+			};
+			buildConfigurationList = 446A41F01C4FD2AE0036AFAC /* Build configuration list for PBXProject "aitbus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 446A41EC1C4FD2AE0036AFAC;
+			productRefGroup = 446A41F61C4FD2AE0036AFAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				446A41F41C4FD2AE0036AFAC /* aitbus */,
+				446A420A1C4FD2AF0036AFAC /* aitbusTests */,
+				446A42151C4FD2AF0036AFAC /* aitbusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		446A41F31C4FD2AE0036AFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446A42051C4FD2AE0036AFAC /* LaunchScreen.storyboard in Resources */,
+				446A42021C4FD2AE0036AFAC /* Assets.xcassets in Resources */,
+				446A42001C4FD2AE0036AFAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446A42091C4FD2AF0036AFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446A42141C4FD2AF0036AFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		446A41F11C4FD2AE0036AFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446A41FD1C4FD2AE0036AFAC /* SecondViewController.swift in Sources */,
+				446A41F91C4FD2AE0036AFAC /* AppDelegate.swift in Sources */,
+				446A41FB1C4FD2AE0036AFAC /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446A42071C4FD2AF0036AFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446A42101C4FD2AF0036AFAC /* aitbusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446A42121C4FD2AF0036AFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446A421B1C4FD2AF0036AFAC /* aitbusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		446A420D1C4FD2AF0036AFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 446A41F41C4FD2AE0036AFAC /* aitbus */;
+			targetProxy = 446A420C1C4FD2AF0036AFAC /* PBXContainerItemProxy */;
+		};
+		446A42181C4FD2AF0036AFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 446A41F41C4FD2AE0036AFAC /* aitbus */;
+			targetProxy = 446A42171C4FD2AF0036AFAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		446A41FE1C4FD2AE0036AFAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446A41FF1C4FD2AE0036AFAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		446A42031C4FD2AE0036AFAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446A42041C4FD2AE0036AFAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		446A421D1C4FD2AF0036AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		446A421E1C4FD2AF0036AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		446A42201C4FD2AF0036AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = aitbus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ddo.ppenzikken01.aitbus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		446A42211C4FD2AF0036AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = aitbus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ddo.ppenzikken01.aitbus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		446A42231C4FD2AF0036AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = aitbusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ddo.ppenzikken01.aitbusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aitbus.app/aitbus";
+			};
+			name = Debug;
+		};
+		446A42241C4FD2AF0036AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = aitbusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ddo.ppenzikken01.aitbusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aitbus.app/aitbus";
+			};
+			name = Release;
+		};
+		446A42261C4FD2AF0036AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = aitbusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ddo.ppenzikken01.aitbusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = aitbus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		446A42271C4FD2AF0036AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = aitbusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ddo.ppenzikken01.aitbusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = aitbus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		446A41F01C4FD2AE0036AFAC /* Build configuration list for PBXProject "aitbus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446A421D1C4FD2AF0036AFAC /* Debug */,
+				446A421E1C4FD2AF0036AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446A421F1C4FD2AF0036AFAC /* Build configuration list for PBXNativeTarget "aitbus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446A42201C4FD2AF0036AFAC /* Debug */,
+				446A42211C4FD2AF0036AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		446A42221C4FD2AF0036AFAC /* Build configuration list for PBXNativeTarget "aitbusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446A42231C4FD2AF0036AFAC /* Debug */,
+				446A42241C4FD2AF0036AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		446A42251C4FD2AF0036AFAC /* Build configuration list for PBXNativeTarget "aitbusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446A42261C4FD2AF0036AFAC /* Debug */,
+				446A42271C4FD2AF0036AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 446A41ED1C4FD2AE0036AFAC /* Project object */;
+}
