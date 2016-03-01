@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4417EBFA1C85D8EF0010E516 /* PPConfigCollectionBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */; };
+		4417EBFC1C85DA580010E516 /* PPConfigCollectionBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */; };
+		442F38021C68EEFA003D722E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F38011C68EEFA003D722E /* ConfigViewController.swift */; };
+		442F38051C68F1E4003D722E /* PPConfigCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F38031C68F1E4003D722E /* PPConfigCollectionViewCell.swift */; };
+		442F38061C68F1E4003D722E /* PPConfigCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442F38041C68F1E4003D722E /* PPConfigCollectionViewCell.xib */; };
 		446A41F91C4FD2AE0036AFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A41F81C4FD2AE0036AFAC /* AppDelegate.swift */; };
 		446A41FB1C4FD2AE0036AFAC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A41FA1C4FD2AE0036AFAC /* FirstViewController.swift */; };
 		446A41FD1C4FD2AE0036AFAC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A41FC1C4FD2AE0036AFAC /* SecondViewController.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPConfigCollectionBaseView.swift; sourceTree = "<group>"; };
+		4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPConfigCollectionBaseView.xib; sourceTree = "<group>"; };
+		442F38011C68EEFA003D722E /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		442F38031C68F1E4003D722E /* PPConfigCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPConfigCollectionViewCell.swift; sourceTree = "<group>"; };
+		442F38041C68F1E4003D722E /* PPConfigCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPConfigCollectionViewCell.xib; sourceTree = "<group>"; };
 		446A41F51C4FD2AE0036AFAC /* aitbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aitbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446A41F81C4FD2AE0036AFAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		446A41FA1C4FD2AE0036AFAC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +99,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4439977D1C61107D003EF76F /* class */ = {
+			isa = PBXGroup;
+			children = (
+				4439977E1C61107D003EF76F /* Config */,
+				4439977F1C61107D003EF76F /* Manager */,
+				443997801C61107D003EF76F /* Service */,
+				443997811C61107D003EF76F /* View */,
+				443997821C61107D003EF76F /* ViewController */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		4439977E1C61107D003EF76F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4439977F1C61107D003EF76F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		443997801C61107D003EF76F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		443997811C61107D003EF76F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				442F38031C68F1E4003D722E /* PPConfigCollectionViewCell.swift */,
+				442F38041C68F1E4003D722E /* PPConfigCollectionViewCell.xib */,
+				4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */,
+				4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		443997821C61107D003EF76F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		446A41EC1C4FD2AE0036AFAC = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +175,11 @@
 		446A41F71C4FD2AE0036AFAC /* aitbus */ = {
 			isa = PBXGroup;
 			children = (
+				4439977D1C61107D003EF76F /* class */,
 				446A41F81C4FD2AE0036AFAC /* AppDelegate.swift */,
 				446A41FA1C4FD2AE0036AFAC /* FirstViewController.swift */,
 				446A41FC1C4FD2AE0036AFAC /* SecondViewController.swift */,
+				442F38011C68EEFA003D722E /* ConfigViewController.swift */,
 				446A41FE1C4FD2AE0036AFAC /* Main.storyboard */,
 				446A42011C4FD2AE0036AFAC /* Assets.xcassets */,
 				446A42031C4FD2AE0036AFAC /* LaunchScreen.storyboard */,
@@ -259,8 +322,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442F38061C68F1E4003D722E /* PPConfigCollectionViewCell.xib in Resources */,
 				446A42051C4FD2AE0036AFAC /* LaunchScreen.storyboard in Resources */,
 				446A42021C4FD2AE0036AFAC /* Assets.xcassets in Resources */,
+				4417EBFC1C85DA580010E516 /* PPConfigCollectionBaseView.xib in Resources */,
 				446A42001C4FD2AE0036AFAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +400,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				446A41FD1C4FD2AE0036AFAC /* SecondViewController.swift in Sources */,
+				442F38051C68F1E4003D722E /* PPConfigCollectionViewCell.swift in Sources */,
+				4417EBFA1C85D8EF0010E516 /* PPConfigCollectionBaseView.swift in Sources */,
 				446A41F91C4FD2AE0036AFAC /* AppDelegate.swift in Sources */,
+				442F38021C68EEFA003D722E /* ConfigViewController.swift in Sources */,
 				446A41FB1C4FD2AE0036AFAC /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
