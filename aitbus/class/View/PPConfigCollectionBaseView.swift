@@ -13,6 +13,8 @@ class PPConfigCollectionBaseView: UIView {
 
     
     @IBOutlet var iconBaseView:UIView?
+    @IBOutlet var descriptionLabel:UILabel?
+    @IBOutlet var iconImageView:UIImageView?
     
     var nibView:UIView? //NIBから読み込んだView
     
@@ -23,7 +25,30 @@ class PPConfigCollectionBaseView: UIView {
         }
     }
     
+    @IBInspectable var iconBaseViewBackColor: UIColor = UIColor.whiteColor() {
+        didSet {
+            iconBaseView?.backgroundColor = iconBaseViewBackColor
+        }
+    }
     
+    @IBInspectable var descriptionLabelText: String = "" {
+        didSet {
+            iconBaseView?.backgroundColor = iconBaseViewBackColor
+        }
+    }
+    
+    @IBInspectable var iconImage: UIImage = UIImage() {
+        didSet {
+            iconImageView?.image = iconImage
+        }
+    }
+    
+    
+    //MARK: - 公開
+
+    
+    
+    //MARK: - 非公開
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -73,6 +98,9 @@ class PPConfigCollectionBaseView: UIView {
         nibView?.frame = self.frame
         
     }
+    
+    
+
 
 
 }

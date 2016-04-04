@@ -16,8 +16,19 @@ class PPConfigCollectionViewCell: UICollectionViewCell {
     
     var nibView:UIView? //NIBから読み込んだView
     
-
-
+    
+    //MARK: - 公開
+    public func setDescriptionText(text: String){
+        baseView?.descriptionLabel!.text = text
+    }
+    
+    public func setIconImageName(iconName:String){
+        baseView?.iconImageView!.image = UIImage.init(named: iconName)
+    }
+    
+    
+    
+    //MARK: - 非公開
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -57,11 +68,12 @@ class PPConfigCollectionViewCell: UICollectionViewCell {
      共通の初期化
      */
     private func commonInit(){
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "PPConfigCollectionViewCell", bundle: bundle)
-        nibView = nib.instantiateWithOwner(self, options: nil).first as? UIView
-        
-        addSubview(nibView!)
+//        let bundle = NSBundle(forClass: self.dynamicType)
+//        let nib = UINib(nibName: "PPConfigCollectionViewCell", bundle: bundle)
+//        nibView = nib.instantiateWithOwner(self, options: nil).first as? UIView
+//        
+//        addSubview(nibView!)
+
         
         
     }
