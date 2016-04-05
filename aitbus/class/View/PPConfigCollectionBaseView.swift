@@ -97,6 +97,9 @@ class PPConfigCollectionBaseView: UIView {
         
         nibView?.frame = self.frame
         
+        
+        //影
+        nibView?.layer.shadowOffset = CGSizeMake(0,10)
     }
     
     

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  aitbus
+
+  Created by ppengotsu on 2016/04/06.
+  Copyright © 2016年 ppengotsu. All rights reserved.
+*/
+
+//画面
+//設定画面
+"ConfigViewController.Cell.Title.About"= "about";
+"ConfigViewController.Cell.Title.AppWeb"= "アプリ公式";
+"ConfigViewController.Cell.Title.AppMail"= "問い合わせ";
+"ConfigViewController.Cell.Title.DataWeb"= "データ公式";
+"ConfigViewController.Cell.Title.BusPlace"= "停留所";
+"ConfigViewController.Cell.Title.Sns"= "SNS投稿";

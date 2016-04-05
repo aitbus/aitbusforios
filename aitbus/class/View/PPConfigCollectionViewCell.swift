@@ -7,6 +7,13 @@
 //
 
 import UIKit
+enum CellIconImageBackColor: Int {
+    case red=0
+    case green
+    case none
+
+}
+
 
 @IBDesignable
 class PPConfigCollectionViewCell: UICollectionViewCell {
@@ -18,12 +25,27 @@ class PPConfigCollectionViewCell: UICollectionViewCell {
     
     
     //MARK: - 公開
-    public func setDescriptionText(text: String){
+    internal func setDescriptionText(text: String){
         baseView?.descriptionLabel!.text = text
     }
     
-    public func setIconImageName(iconName:String){
+    internal func setIconImageName(iconName:String){
+        baseView?.iconImageView?.hidden = false
         baseView?.iconImageView!.image = UIImage.init(named: iconName)
+    }
+    
+    internal func setIconImageBackGroudColorMode(iconBackColor:CellIconImageBackColor){
+        switch iconBackColor {
+        case CellIconImageBackColor.red:
+            baseView?.iconBaseView!.backgroundColor = UIColor.init(red: 255.0/255.0, green: 213.0/255.0, blue: 223.0/255.0, alpha: 1.0)
+            break
+        case CellIconImageBackColor.green:
+            baseView?.iconBaseView!.backgroundColor = UIColor.init(red: 226.0/255.0, green: 245.0/255.0, blue: 239.0/255.0, alpha: 1.0)
+            break
+        case CellIconImageBackColor.none:
+            baseView?.iconBaseView!.backgroundColor = UIColor.init(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
+            break
+        }
     }
     
     
@@ -74,8 +96,7 @@ class PPConfigCollectionViewCell: UICollectionViewCell {
 //        
 //        addSubview(nibView!)
 
-        
-        
+
     }
     
 

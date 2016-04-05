@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4411AD3A1CB2CB0A0054775C /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4411AD391CB2CB0A0054775C /* EZSwiftExtensions.framework */; };
+		4411AD481CB419B30054775C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4411AD471CB419B30054775C /* Localizable.strings */; };
 		4417EBFA1C85D8EF0010E516 /* PPConfigCollectionBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */; };
 		4417EBFC1C85DA580010E516 /* PPConfigCollectionBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */; };
 		442F38021C68EEFA003D722E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F38011C68EEFA003D722E /* ConfigViewController.swift */; };
@@ -41,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4411AD391CB2CB0A0054775C /* EZSwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZSwiftExtensions.framework; path = Carthage/Build/iOS/EZSwiftExtensions.framework; sourceTree = "<group>"; };
+		4411AD3D1CB2D8C20054775C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4411AD3F1CB2D8E00054775C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		4411AD471CB419B30054775C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPConfigCollectionBaseView.swift; sourceTree = "<group>"; };
 		4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPConfigCollectionBaseView.xib; sourceTree = "<group>"; };
 		442F38011C68EEFA003D722E /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4411AD3A1CB2CB0A0054775C /* EZSwiftExtensions.framework in Frameworks */,
 				4CEA225851F4F4B984DA2E1A /* libPods-aitbus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,14 +101,23 @@
 		0605C402F78A526A0ABA5689 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4411AD391CB2CB0A0054775C /* EZSwiftExtensions.framework */,
 				6E1D038FF54316D42C50986F /* libPods-aitbus.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4411AD401CB2D95F0054775C /* OtherResource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherResource;
+			sourceTree = "<group>";
+		};
 		4439977D1C61107D003EF76F /* class */ = {
 			isa = PBXGroup;
 			children = (
+				4411AD401CB2D95F0054775C /* OtherResource */,
 				4439977E1C61107D003EF76F /* Config */,
 				4439977F1C61107D003EF76F /* Manager */,
 				443997801C61107D003EF76F /* Service */,
@@ -114,6 +130,7 @@
 		4439977E1C61107D003EF76F /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				4411AD471CB419B30054775C /* Localizable.strings */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -228,6 +245,7 @@
 				446A41F31C4FD2AE0036AFAC /* Resources */,
 				938FCB9F31237DB7ADEC1D95 /* Embed Pods Frameworks */,
 				30B76D272A48D9BD76868E3F /* Copy Pods Resources */,
+				4411AD3B1CB2CB6D0054775C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -286,6 +304,7 @@
 				TargetAttributes = {
 					446A41F41C4FD2AE0036AFAC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3WZMYL5AE6;
 					};
 					446A420A1C4FD2AF0036AFAC = {
 						CreatedOnToolsVersion = 7.2;
@@ -304,6 +323,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 446A41EC1C4FD2AE0036AFAC;
 			productRefGroup = 446A41F61C4FD2AE0036AFAC /* Products */;
@@ -323,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442F38061C68F1E4003D722E /* PPConfigCollectionViewCell.xib in Resources */,
+				4411AD481CB419B30054775C /* Localizable.strings in Resources */,
 				446A42051C4FD2AE0036AFAC /* LaunchScreen.storyboard in Resources */,
 				446A42021C4FD2AE0036AFAC /* Assets.xcassets in Resources */,
 				4417EBFC1C85DA580010E516 /* PPConfigCollectionBaseView.xib in Resources */,
@@ -376,6 +397,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		4411AD3B1CB2CB6D0054775C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/EZSwiftExtensions.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		938FCB9F31237DB7ADEC1D95 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -444,6 +479,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				446A41FF1C4FD2AE0036AFAC /* Base */,
+				4411AD3F1CB2D8E00054775C /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -452,6 +488,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				446A42041C4FD2AE0036AFAC /* Base */,
+				4411AD3D1CB2D8C20054775C /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -547,11 +584,18 @@
 			baseConfigurationReference = B5CECF0435D0AB2094B153E7 /* Pods-aitbus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = aitbus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ddo.ppenzikken01.aitbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -560,11 +604,18 @@
 			baseConfigurationReference = C59996970762BD6073213758 /* Pods-aitbus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = aitbus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ddo.ppenzikken01.aitbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
