@@ -25,6 +25,12 @@ class ConfigViewController: UIViewController ,UICollectionViewDelegate,UICollect
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        
+        
+        
+        
+        
         baseColletionView?.backgroundColor = UIColor.init(red: 237.0/255.0, green: 237.0/255.0, blue: 237.0/255.0, alpha: 1.0)
         
         baseColletionView?.delegate =   self
@@ -51,6 +57,10 @@ class ConfigViewController: UIViewController ,UICollectionViewDelegate,UICollect
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 12;
     }
+    func collectionView(collectionView:UICollectionView,layout collectionViewLayout:UICollectionViewLayout,sizeForItemAtIndexPath indexPath:NSIndexPath) -> CGSize{
+        return CGSize(width: (self.view.frame.width/3-10),height: 135)
+    }
+
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell:PPConfigCollectionViewCell  = collectionView.dequeueReusableCellWithReuseIdentifier("PPConfigCollectionViewCell", forIndexPath: indexPath) as! PPConfigCollectionViewCell
