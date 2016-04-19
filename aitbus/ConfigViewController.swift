@@ -6,7 +6,8 @@
 //  Copyright © 2016年 ppengotsu. All rights reserved.
 
 import UIKit
-
+import SafariServices
+import MessageUI
 
 enum ConfigCell: Int {
     case About=0
@@ -16,6 +17,17 @@ enum ConfigCell: Int {
     case BusPlace
     case SubmitSNS
 }
+
+enum NextUrl:String {
+    case About = "https://blog.ppen.info/wp/"
+    case AppWeb = "https://blog.ppen.info/wp/?page_id=29"
+    case DataOfficialWeb = "https://www.ait.ac.jp/access/yakusa/"
+
+}
+
+    let AskMailAddress = "webmaster.ppen@hotmail.co.jp"
+    let AskMailSubject = ""
+    let AskMailBody = ""
 
 class ConfigViewController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource{
     
@@ -103,11 +115,11 @@ class ConfigViewController: UIViewController ,UICollectionViewDelegate,UICollect
             cell.setIconImageBackGroudColorMode(CellIconImageBackColor.green)
             break
             
-        case ConfigCell.SubmitSNS?:
-            cell.setDescriptionText(NSLocalizedString("ConfigViewController.Cell.Title.Sns",comment: ""))
-            cell.setIconImageName("config_sns")
-            cell.setIconImageBackGroudColorMode(CellIconImageBackColor.green)
-            break
+//        case ConfigCell.SubmitSNS?:
+//            cell.setDescriptionText(NSLocalizedString("ConfigViewController.Cell.Title.Sns",comment: ""))
+//            cell.setIconImageName("config_sns")
+//            cell.setIconImageBackGroudColorMode(CellIconImageBackColor.green)
+//            break
             
         default:
             cell.setDescriptionText("")
@@ -118,6 +130,63 @@ class ConfigViewController: UIViewController ,UICollectionViewDelegate,UICollect
         }
         return cell
         
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let indexRow:ConfigCell? = ConfigCell(rawValue: indexPath.row)
+        
+        switch indexRow {
+        case ConfigCell.About?:
+            let safariViewController = SFSafariViewController(URL: NSURL(string: NextUrl.About.rawValue)!)
+            self.presentViewController(safariViewController, animated: true, completion: nil)
+            break
+            
+        case ConfigCell.AppWeb?:
+            let safariViewController = SFSafariViewController(URL: NSURL(string: NextUrl.AppWeb.rawValue)!)
+            self.presentViewController(safariViewController, animated: true, completion: nil)
+            break
+            
+        case ConfigCell.AppAsk?:
+            if MFMailComposeViewController.canSendMail() == false {
+                //メールを送る設定ができなてない時
+                let alertController = UIAlertController(title: "メール設定がしてありません。", message: "メールの設定してください", preferredStyle: .Alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                return
+            }
+            
+            let mailViewController = MFMailComposeViewController()
+            mailViewController.setSubject(AskMailSubject)
+            mailViewController.setToRecipients([AskMailAddress])
+            mailViewController.setMessageBody(AskMailBody, isHTML: false)
+            self.presentViewController(mailViewController, animated: true, completion: nil)
+            
+            break
+            
+        case ConfigCell.DataOfficial?:
+            let safariViewController = SFSafariViewController(URL: NSURL(string: NextUrl.DataOfficialWeb.rawValue)!)
+            self.presentViewController(safariViewController, animated: true, completion: nil)
+            break
+            
+        case ConfigCell.BusPlace?:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainVC = storyboard.instantiateViewControllerWithIdentifier("PPMapViewController") as! PPMapViewController
+            self.navigationController?.pushViewController(mainVC, animated: true)
+            break
+            
+        case ConfigCell.SubmitSNS?:
+
+            break
+            
+        default:
+
+            break
+            
+
+        }
+
     }
     
 }

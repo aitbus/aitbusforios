@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4411AD3A1CB2CB0A0054775C /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4411AD391CB2CB0A0054775C /* EZSwiftExtensions.framework */; };
 		4411AD481CB419B30054775C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4411AD471CB419B30054775C /* Localizable.strings */; };
+		441263301CC67B2C0062D7EB /* PPPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4412632F1CC67B2C0062D7EB /* PPPlaceView.swift */; };
+		441263321CC67B970062D7EB /* PPPlaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441263311CC67B970062D7EB /* PPPlaceView.xib */; };
 		4417EBFA1C85D8EF0010E516 /* PPConfigCollectionBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */; };
 		4417EBFC1C85DA580010E516 /* PPConfigCollectionBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */; };
 		442F38021C68EEFA003D722E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F38011C68EEFA003D722E /* ConfigViewController.swift */; };
@@ -22,6 +24,9 @@
 		446A42051C4FD2AE0036AFAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446A42031C4FD2AE0036AFAC /* LaunchScreen.storyboard */; };
 		446A42101C4FD2AF0036AFAC /* aitbusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A420F1C4FD2AF0036AFAC /* aitbusTests.swift */; };
 		446A421B1C4FD2AF0036AFAC /* aitbusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A421A1C4FD2AF0036AFAC /* aitbusUITests.swift */; };
+		449215331CC5386F00D951DE /* PPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449215321CC5386F00D951DE /* PPMapViewController.swift */; };
+		449215351CC53A5F00D951DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449215341CC53A5F00D951DE /* MapKit.framework */; };
+		449215371CC53D1300D951DE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449215361CC53D1300D951DE /* MessageUI.framework */; };
 		4CEA225851F4F4B984DA2E1A /* libPods-aitbus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1D038FF54316D42C50986F /* libPods-aitbus.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +52,8 @@
 		4411AD3D1CB2D8C20054775C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4411AD3F1CB2D8E00054775C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		4411AD471CB419B30054775C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4412632F1CC67B2C0062D7EB /* PPPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPPlaceView.swift; sourceTree = "<group>"; };
+		441263311CC67B970062D7EB /* PPPlaceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPPlaceView.xib; sourceTree = "<group>"; };
 		4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPConfigCollectionBaseView.swift; sourceTree = "<group>"; };
 		4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPConfigCollectionBaseView.xib; sourceTree = "<group>"; };
 		442F38011C68EEFA003D722E /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +73,9 @@
 		446A42161C4FD2AF0036AFAC /* aitbusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aitbusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		446A421A1C4FD2AF0036AFAC /* aitbusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aitbusUITests.swift; sourceTree = "<group>"; };
 		446A421C1C4FD2AF0036AFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449215321CC5386F00D951DE /* PPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMapViewController.swift; sourceTree = "<group>"; };
+		449215341CC53A5F00D951DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		449215361CC53D1300D951DE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		6E1D038FF54316D42C50986F /* libPods-aitbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-aitbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CECF0435D0AB2094B153E7 /* Pods-aitbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aitbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aitbus/Pods-aitbus.debug.xcconfig"; sourceTree = "<group>"; };
 		C59996970762BD6073213758 /* Pods-aitbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aitbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-aitbus/Pods-aitbus.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449215371CC53D1300D951DE /* MessageUI.framework in Frameworks */,
+				449215351CC53A5F00D951DE /* MapKit.framework in Frameworks */,
 				4411AD3A1CB2CB0A0054775C /* EZSwiftExtensions.framework in Frameworks */,
 				4CEA225851F4F4B984DA2E1A /* libPods-aitbus.a in Frameworks */,
 			);
@@ -101,6 +113,8 @@
 		0605C402F78A526A0ABA5689 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				449215361CC53D1300D951DE /* MessageUI.framework */,
+				449215341CC53A5F00D951DE /* MapKit.framework */,
 				4411AD391CB2CB0A0054775C /* EZSwiftExtensions.framework */,
 				6E1D038FF54316D42C50986F /* libPods-aitbus.a */,
 			);
@@ -156,6 +170,8 @@
 				442F38041C68F1E4003D722E /* PPConfigCollectionViewCell.xib */,
 				4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */,
 				4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */,
+				4412632F1CC67B2C0062D7EB /* PPPlaceView.swift */,
+				441263311CC67B970062D7EB /* PPPlaceView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +179,7 @@
 		443997821C61107D003EF76F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				449215321CC5386F00D951DE /* PPMapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -347,6 +364,7 @@
 				446A42051C4FD2AE0036AFAC /* LaunchScreen.storyboard in Resources */,
 				446A42021C4FD2AE0036AFAC /* Assets.xcassets in Resources */,
 				4417EBFC1C85DA580010E516 /* PPConfigCollectionBaseView.xib in Resources */,
+				441263321CC67B970062D7EB /* PPPlaceView.xib in Resources */,
 				446A42001C4FD2AE0036AFAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,8 +456,10 @@
 				442F38051C68F1E4003D722E /* PPConfigCollectionViewCell.swift in Sources */,
 				4417EBFA1C85D8EF0010E516 /* PPConfigCollectionBaseView.swift in Sources */,
 				446A41F91C4FD2AE0036AFAC /* AppDelegate.swift in Sources */,
+				441263301CC67B2C0062D7EB /* PPPlaceView.swift in Sources */,
 				442F38021C68EEFA003D722E /* ConfigViewController.swift in Sources */,
 				446A41FB1C4FD2AE0036AFAC /* FirstViewController.swift in Sources */,
+				449215331CC5386F00D951DE /* PPMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
