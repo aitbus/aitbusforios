@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="iconBaseViewCornerRaidus">
-                    <real key="value" value="11"/>
-                </userDefinedRuntimeAttribute>
-            </userDefinedRuntimeAttributes>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PPConfigCollectionViewCell" reuseIdentifier="PPConfigCollectionViewCell" id="gTV-IL-0wX" customClass="PPConfigCollectionViewCell" customModule="aitbus" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="90" height="135"/>
@@ -30,6 +24,7 @@
                                 <color key="value" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="config_info"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="descriptionLabelText" value="Label"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
@@ -42,13 +37,8 @@
                 <constraint firstItem="QMc-K0-NBU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jg6-Dx-FsC"/>
             </constraints>
             <size key="customSize" width="76" height="113"/>
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="iconBaseViewCornerRaidus">
-                    <real key="value" value="28"/>
-                </userDefinedRuntimeAttribute>
-            </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="baseView" destination="QMc-K0-NBU" id="dZj-fe-SCA"/>
+                <outlet property="baseView" destination="QMc-K0-NBU" id="4sl-47-Hhp"/>
             </connections>
             <point key="canvasLocation" x="466" y="336.5"/>
         </collectionViewCell>

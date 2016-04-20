@@ -1,22 +1,21 @@
 //
-//  PPPlaceView.swift
+//  PPRestTimeView.swift
 //  aitbus
 //
-//  Created by ppengotsu on 2016/04/19.
+//  Created by ppengotsu on 2016/04/20.
 //  Copyright © 2016年 ppengotsu. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class PPPlaceView: UIView {
-    
-     var nibView:UIView! //NIBから読み込んだView
-    
-    @IBOutlet var timeNameLabel:UILabel!
-    @IBOutlet var fromPlaceLabel:UILabel!
-    @IBOutlet var toPlaceLabel:UILabel!
+class PPRestTimeView: UIView {
 
+    var nibView:UIView! //NIBから読み込んだView
+    
+    @IBOutlet var restTimeLabel:UILabel!
+    @IBOutlet var nextStartLabel:UILabel!
+    
     //MARK: - 非公開
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -58,7 +57,7 @@ class PPPlaceView: UIView {
      */
     private func commonInit(){
         let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "PPPlaceView", bundle: bundle)
+        let nib = UINib(nibName: "PPRestTimeView", bundle: bundle)
         nibView = nib.instantiateWithOwner(self, options: nil).first as? UIView
         self.frame = nibView.frame
         addSubview(nibView!)
@@ -71,16 +70,5 @@ class PPPlaceView: UIView {
         
         
     }
-    
-    @IBAction func swipeLeft(sender:UISwipeGestureRecognizer){
-        
-    }
-    
-    @IBAction func swipeRight(sender:UISwipeGestureRecognizer){
-        
-    }
-    
-    
-
 
 }

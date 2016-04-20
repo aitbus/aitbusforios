@@ -11,6 +11,10 @@
 		4411AD481CB419B30054775C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4411AD471CB419B30054775C /* Localizable.strings */; };
 		441263301CC67B2C0062D7EB /* PPPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4412632F1CC67B2C0062D7EB /* PPPlaceView.swift */; };
 		441263321CC67B970062D7EB /* PPPlaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441263311CC67B970062D7EB /* PPPlaceView.xib */; };
+		441263341CC69C8B0062D7EB /* PPRestTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441263331CC69C8B0062D7EB /* PPRestTimeView.swift */; };
+		441263361CC69CA10062D7EB /* PPRestTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441263351CC69CA10062D7EB /* PPRestTimeView.xib */; };
+		441263391CC7DD9D0062D7EB /* PPDaiyaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441263371CC7DD9D0062D7EB /* PPDaiyaTableViewCell.swift */; };
+		4412633A1CC7DD9D0062D7EB /* PPDaiyaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441263381CC7DD9D0062D7EB /* PPDaiyaTableViewCell.xib */; };
 		4417EBFA1C85D8EF0010E516 /* PPConfigCollectionBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */; };
 		4417EBFC1C85DA580010E516 /* PPConfigCollectionBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */; };
 		442F38021C68EEFA003D722E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F38011C68EEFA003D722E /* ConfigViewController.swift */; };
@@ -54,6 +58,10 @@
 		4411AD471CB419B30054775C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4412632F1CC67B2C0062D7EB /* PPPlaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPPlaceView.swift; sourceTree = "<group>"; };
 		441263311CC67B970062D7EB /* PPPlaceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPPlaceView.xib; sourceTree = "<group>"; };
+		441263331CC69C8B0062D7EB /* PPRestTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRestTimeView.swift; sourceTree = "<group>"; };
+		441263351CC69CA10062D7EB /* PPRestTimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPRestTimeView.xib; sourceTree = "<group>"; };
+		441263371CC7DD9D0062D7EB /* PPDaiyaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPDaiyaTableViewCell.swift; sourceTree = "<group>"; };
+		441263381CC7DD9D0062D7EB /* PPDaiyaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPDaiyaTableViewCell.xib; sourceTree = "<group>"; };
 		4417EBF91C85D8EF0010E516 /* PPConfigCollectionBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPConfigCollectionBaseView.swift; sourceTree = "<group>"; };
 		4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPConfigCollectionBaseView.xib; sourceTree = "<group>"; };
 		442F38011C68EEFA003D722E /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +180,10 @@
 				4417EBFB1C85DA580010E516 /* PPConfigCollectionBaseView.xib */,
 				4412632F1CC67B2C0062D7EB /* PPPlaceView.swift */,
 				441263311CC67B970062D7EB /* PPPlaceView.xib */,
+				441263331CC69C8B0062D7EB /* PPRestTimeView.swift */,
+				441263351CC69CA10062D7EB /* PPRestTimeView.xib */,
+				441263371CC7DD9D0062D7EB /* PPDaiyaTableViewCell.swift */,
+				441263381CC7DD9D0062D7EB /* PPDaiyaTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,10 +374,12 @@
 				442F38061C68F1E4003D722E /* PPConfigCollectionViewCell.xib in Resources */,
 				4411AD481CB419B30054775C /* Localizable.strings in Resources */,
 				446A42051C4FD2AE0036AFAC /* LaunchScreen.storyboard in Resources */,
+				441263361CC69CA10062D7EB /* PPRestTimeView.xib in Resources */,
 				446A42021C4FD2AE0036AFAC /* Assets.xcassets in Resources */,
 				4417EBFC1C85DA580010E516 /* PPConfigCollectionBaseView.xib in Resources */,
 				441263321CC67B970062D7EB /* PPPlaceView.xib in Resources */,
 				446A42001C4FD2AE0036AFAC /* Main.storyboard in Resources */,
+				4412633A1CC7DD9D0062D7EB /* PPDaiyaTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +468,9 @@
 			files = (
 				446A41FD1C4FD2AE0036AFAC /* SecondViewController.swift in Sources */,
 				442F38051C68F1E4003D722E /* PPConfigCollectionViewCell.swift in Sources */,
+				441263341CC69C8B0062D7EB /* PPRestTimeView.swift in Sources */,
 				4417EBFA1C85D8EF0010E516 /* PPConfigCollectionBaseView.swift in Sources */,
+				441263391CC7DD9D0062D7EB /* PPDaiyaTableViewCell.swift in Sources */,
 				446A41F91C4FD2AE0036AFAC /* AppDelegate.swift in Sources */,
 				441263301CC67B2C0062D7EB /* PPPlaceView.swift in Sources */,
 				442F38021C68EEFA003D722E /* ConfigViewController.swift in Sources */,

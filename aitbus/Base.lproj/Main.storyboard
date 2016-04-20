@@ -16,9 +16,45 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6m-Yd-7WL" customClass="PPPlaceView" customModule="aitbus" customModuleProvider="target">
+                                <rect key="frame" x="12" y="35" width="576" height="246"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="TzL-Ul-Pma"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vpj-Om-0r2" customClass="PPRestTimeView" customModule="aitbus" customModuleProvider="target">
+                                <rect key="frame" x="12" y="289" width="576" height="246"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="2Oi-qo-i8K"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2Oi-qo-i8K"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vpj-Om-0r2" firstAttribute="top" secondItem="r6m-Yd-7WL" secondAttribute="bottom" constant="8" id="C7l-DW-Nun"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Vpj-Om-0r2" secondAttribute="bottom" constant="16" id="K9L-z0-RV7"/>
+                            <constraint firstAttribute="trailing" secondItem="Vpj-Om-0r2" secondAttribute="trailing" constant="12" id="bbi-hJ-9IA"/>
+                            <constraint firstItem="r6m-Yd-7WL" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="15" id="cRx-h9-wQ0"/>
+                            <constraint firstAttribute="trailing" secondItem="r6m-Yd-7WL" secondAttribute="trailing" constant="12" id="nvb-ak-s3r"/>
+                            <constraint firstItem="r6m-Yd-7WL" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="12" id="ra2-kl-73G"/>
+                            <constraint firstItem="Vpj-Om-0r2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="12" id="ur7-f0-qcD"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="tab_rest_time" id="acW-dT-cKf"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="placeView" destination="r6m-Yd-7WL" id="Knk-k9-n4z"/>
+                        <outlet property="restTimeView" destination="Vpj-Om-0r2" id="GX6-Je-Njm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,7 +63,7 @@
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="aitbus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="aitbus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -36,18 +72,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6K-Ma-v2c" customClass="PPPlaceView" customModule="aitbus" customModuleProvider="target">
+                                <rect key="frame" x="12" y="35" width="576" height="246"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="2rJ-Ok-gel"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BWz-Ra-gk6">
+                                <rect key="frame" x="12" y="289" width="576" height="262"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="BWz-Ra-gk6" firstAttribute="top" secondItem="U6K-Ma-v2c" secondAttribute="bottom" constant="8" id="3aK-lc-1qY"/>
+                            <constraint firstItem="BWz-Ra-gk6" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="12" id="5Eb-3g-zev"/>
+                            <constraint firstAttribute="trailing" secondItem="BWz-Ra-gk6" secondAttribute="trailing" constant="12" id="HXw-UX-CSt"/>
+                            <constraint firstItem="U6K-Ma-v2c" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="15" id="I0q-vY-qEl"/>
+                            <constraint firstAttribute="trailing" secondItem="U6K-Ma-v2c" secondAttribute="trailing" constant="12" id="IrA-dd-GH1"/>
+                            <constraint firstItem="U6K-Ma-v2c" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="12" id="l8c-ep-p7g"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="BWz-Ra-gk6" secondAttribute="bottom" id="n4F-FR-FKq"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="tab_schedule" id="cPa-gy-q4n"/>
@@ -116,7 +161,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7yA-fV-Utz" customClass="PPConfigCollectionViewCell" customModule="aitbus" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PPConfigCollectionViewCell" id="7yA-fV-Utz" customClass="PPConfigCollectionViewCell" customModule="aitbus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64" width="90" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">

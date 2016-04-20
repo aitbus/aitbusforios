@@ -9,6 +9,9 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    @IBOutlet var placeView:PPPlaceView!
+    @IBOutlet var restTimeView:PPRestTimeView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
